@@ -64,20 +64,20 @@ const ProductDetail = ({ cart, setCart }) => {
       <div className="container">
         <div className="product-single-item">
           <div className="img">
-            <img src={product.imgSrc} alt={product.title} />
+            <img src={product?.imgSrc} alt={product?.title} />
           </div>
           <div className="text-center">
-            <h2 className="card-title">{product.title}</h2>
-            <p className="card-text">{product.description} </p>
-            <button className="btn btn-primary me-4">{product.price} ₹</button>
+            <h2 className="card-title">{product?.title}</h2>
+            <p className="card-text">{product?.description} </p>
+            <button className="btn btn-primary me-4">{product?.price} ₹</button>
             <button
               onClick={() =>
                 addToCart(
-                  product.id,
-                  product.price,
-                  product.title,
-                  product.description,
-                  product.imgSrc
+                  product?.id,
+                  product?.price,
+                  product?.title,
+                  product?.description,
+                  product?.imgSrc
                 )
               }
               className="btn btn-success"
